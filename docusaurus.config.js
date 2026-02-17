@@ -74,7 +74,17 @@ const config = {
       }),
     ],
   ],
-
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      ({
+        hashed: true,
+        language: ["en"],
+        indexBlog: false,
+        docsRouteBasePath: "/", 
+      }),
+    ],
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
