@@ -1,3 +1,8 @@
+# Init
+theme: jekyll-theme-minimal
+title: OpenRefill's Documentation
+description: Bookmark this to keep an eye on project updates!
+
 # Where things are
 source              : .
 destination         : ./_site
