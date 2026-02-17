@@ -1,2 +1,3 @@
-# OpenRefill.github.io
+# OpenRefill Documentation
+
 Documentation Site
