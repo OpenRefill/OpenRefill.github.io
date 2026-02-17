@@ -93,8 +93,6 @@ const config = {
           // We leave this empty. The search bar will auto-inject itself on the right!
         ],
       },
-        ],
-      },
       footer: {
         style: 'dark',
         links: [
