@@ -84,24 +84,15 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'My Site',
+        title: '', // Left blank so no text appears next to the logo
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'OpenRefill Logo',
+          src: 'img/logo.svg', // This points to the default logo in the static/img folder for now
         },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
+          // We leave this empty. The search bar will auto-inject itself on the right!
+        ],
+      },
         ],
       },
       footer: {
