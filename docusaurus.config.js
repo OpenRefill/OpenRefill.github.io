@@ -87,7 +87,7 @@ const config = {
         title: '', // Left blank so no text appears next to the logo
         logo: {
           alt: 'OpenRefill Logo',
-          src: 'open refill_Logos_Final-15-15-02.png', // This points to the default logo in the static/img folder for now
+          src: 'open refill_Logos_Final-15-15-02.svg', // This points to the default logo in the static/img folder for now
         },
         items: [
           // We leave this empty. The search bar will auto-inject itself on the right!
