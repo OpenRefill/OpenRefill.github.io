@@ -28,3 +28,22 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+/* Increase and properly scale the SVG logo */
+.navbar__logo {
+  height: 50px !important; /* Forces the container height */
+  width: auto !important;
+  display: flex;
+  align-items: center;
+}
+
+/* Force the actual SVG image inside the container to scale up */
+.navbar__logo img {
+  height: 100% !important;
+  width: auto !important;
+  object-fit: contain; /* Ensures the SVG doesn't get stretched or cut off */
+}
+
+/* Optional: Slightly increase navbar height to give the bigger logo room to breathe */
+:root {
+  --ifm-navbar-height: 80px; 
+}
