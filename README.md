@@ -1,3 +1,0 @@
-# OpenRefill Documentation
-
-Documentation Site
