@@ -1,40 +1,24 @@
 // @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
 import {themes as prismThemes} from 'prism-react-renderer';
-
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'OpenRefill',
+  tagline: 'Open Source Refill Station Documentation',
   favicon: 'img/favicon.ico',
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true, 
   },
 
-  // Set the production url of your site here
   url: 'https://openrefill.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'OpenRefill', // Usually your GitHub org/user name.
-  projectName: 'OpenRefill.github.io', // Usually your repo name.
+  organizationName: 'OpenRefill', 
+  projectName: 'OpenRefill.github.io', 
 
   onBrokenLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -46,33 +30,20 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/',
+          routeBasePath: '/', // This makes docs the homepage
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
+          // "Edit this page" links removed
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false, // Disabled for a clean documentation-only site
         theme: {
           customCss: './src/css/custom.css',
         },
       }),
     ],
   ],
+
   themes: [
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
@@ -84,25 +55,21 @@ const config = {
       }),
     ],
   ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       colorMode: {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: '', // Left blank so no text appears next to the logo
+        title: '', 
         logo: {
           alt: 'OpenRefill Logo',
-          src: 'img/logo.svg', // This points to the default logo in the static/img folder for now
+          src: 'img/logo.svg', 
         },
-        items: [
-          // We leave this empty. The search bar will auto-inject itself on the right!
-        ],
-      },
-        copyright: `Copyright © ${new Date().getFullYear()} OpenRefill`,
+        items: [], // Search bar auto-injects here
       },
       prism: {
         theme: prismThemes.github,
